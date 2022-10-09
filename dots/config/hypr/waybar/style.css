@@ -1,7 +1,6 @@
 * {
     border: none;
     border-radius: 0px;
-    /* `otf-font-awesome` is required to be installed for icons */
     font-family: FuraMono Nerd Font;
     font-size: 13px;
     min-height: 0;
@@ -26,7 +25,6 @@ window#waybar.hidden {
 
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
     background: lightblue;
     color: black;

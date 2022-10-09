@@ -1,18 +1,18 @@
+//-- Layout ----------------------------------
 {
     "layer": "top",
     "position": "top",
-    "output": ["DP-5", "eDP-1", "DP-8"],
+    "output": ["DP-5", "eDP-1", "DP-8"], // Which Monitor waybar opens on
     "height": 35,
     "spacing": 4,
     "margin-top": 5,
     "margin-bottom":1,
 
-    // Choose the order of the modules
-
+//-- Modules -----------------------------
     "modules-left":[  "custom/launcher", "wlr/taskbar", "hyprland/window"],
-    "modules-right":["mpd",  "idle_inhibitor", "custom/weather", "bluetooth", "pulseaudio", "cpu", "memory", "disk", "temperature", "backlight", "keyboard-state",  "battery", "tray", "clock", "custom/power"],
-    // Modules configuration
+    "modules-right":["mpd",  "idle_inhibitor", "custom/weather", "bluetooth", "pulseaudio", "cpu", "memory", "disk", "temperature",  "battery", "tray", "clock", "custom/power"],
 
+//-- TaskBar ------------------------------
     "wlr/taskbar": {
         "format": "{icon}",
         "icon-size": 20,
@@ -22,18 +22,8 @@
         "on-click-middle": "close",
         "on-click-right": "activate"
     },
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": " {name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
-    },
-   "sway/language": {
-    "format": " {}",
-    },
+
+//-- Idle ---------------------------------
     "idle_inhibitor": {
         "format": "{icon} ",
         "format-icons": {
@@ -41,37 +31,41 @@
             "deactivated": ""
         }
     },
+
+//-- Tray ---------------------------------
     "tray": {
         "icon-size": 20,
         "spacing": 10
     },
+
+//-- Clock --------------------------------
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
         "format": " {:%I:%M %p}",
         "format-alt": " {:%a %b %d, %G}"
     },
+
+//-- CPU ---------------------------------
     "cpu": {
          "interval": 5,
          "format": " {usage}%",
     },
+
+//-- Mem ----------------------------------
     "memory": {
          "interval": 10,
          "format": " {used:0.1f}G",
     },
-    "temperature": {
-        // "thermal-zone": 2,
-        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-        "critical-threshold": 80,
-        // "format-critical": "{icon} {temperatureC}°C",
-        "format": "{icon} {temperatureC}°C",
-        "format-icons": ["", "", ""]
-    },
+
+//-- Blacklight --------------------------
     "backlight": {
         // "device": "acpi_video1",
         "format": "{icon} {percent}%",
         "format-icons": ["", ""]
     },
+
+//-- Battery -----------------------------
     "battery": {
         "states": {
             // "good": 95,
@@ -83,13 +77,17 @@
         "format-plugged": " {capacity}%",
         "format-alt": "{icon} {time}",
         // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
+        "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
+
+//-- Disk ---------------------------------
     "disk": {
          "interval": 30,
          "format": " {free}",
     },
+
+//-- Network ------------------------------
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) ",
@@ -100,6 +98,8 @@
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
         "on-click-right": "bash ~/.config/rofi/wifi_menu/rofi_wifi_menu"
     },
+
+//-- Pulseaudio ---------------------------
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{icon} {volume}%",
@@ -120,6 +120,7 @@
         "on-click": "pavucontrol"
      },
 
+//-- MPD ---------------------------------
       "mpd": {
         "interval": 2,
         "unknown-tag": "",
@@ -144,16 +145,21 @@
         "smooth-scrolling-threshold": 1,
     },
 
+//-- Launcher -----------------------------
     "custom/launcher":{
         "format": " ",
         "on-click": "/home/rjm/.config/eww/dashboard/launch_dashboard",
         "on-click-right": "eww --config /home/rjm/.config/eww/dashboard/ kill"
     },
+
+//-- Power --------------------------------
     "custom/power":{
         "format": " ",
         "on-click": "/home/rjm/.config/hypr/scripts/powermenu.sh",
         "on-click-right": "killall nwg-bar"
     },
+
+//-- Weather -----------------------------
     "custom/weather": {
     "format": "{}",
     "tooltip": true,
@@ -161,7 +167,7 @@
     "exec": "~/.config/hypr/scripts/waybar-wttr.py",
     "return-type": "json"
     },
-
+//-- Tempturature ------------------------
       "temperature": {
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
@@ -171,6 +177,7 @@
         "format-icons": ["", "", ""]
     },
 
+//-- Bluetooth  ---------------------------
     "bluetooth": {
   	// "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
   	"format": "  {status} ",
@@ -182,10 +189,4 @@
     "on-click": "exec ~/.config/hypr/scripts/wofi_blue"
     },
 
-    "custom/snip":{
-        "format": " ",
-        "on-click": "grimshot --notify save area $HOME/Pictures/$(zenity --entry --text 'Set filename:' --entry-text '.png')"
-    }
 }
-
-Footer

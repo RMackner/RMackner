@@ -25,6 +25,7 @@ window#waybar.hidden {
 
 }
 
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
     background: lightblue;
     color: black;
@@ -47,11 +48,6 @@ window#waybar.hidden {
     background-color: #eb4d4b;
 }
 
-#mode {
-    background-color: #64727D;
-    border-bottom: 3px solid #CDD6F4;
-}
-
 #clock,
 #battery,
 #cpu,
@@ -65,11 +61,8 @@ window#waybar.hidden {
 #custom-launcher,
 #custom-power,
 #custom-weather,
-#custom-updater,
-#custom-snip,
 #taskbar,
 #tray,
-#mode,
 #idle_inhibitor,
 #mpd {
     padding: 0 10px;
@@ -194,7 +187,7 @@ label:focus {
 }
 
 #custom-power{
-    color: #fab387;
+    color: #c5cff5;
     background-color: rgba(30, 30, 46, 0.1);
     background-image: linear-gradient(62deg, rgba(30, 30, 46, 0.3) 5%,
     rgba(30, 30, 46, 1) 95%);
@@ -205,7 +198,7 @@ label:focus {
 }
 
 #custom-launcher{
-    color: #87b0f9;
+    color: #ef9f76;
     background-color: rgba(30, 30, 46, 0.5);
     background-image: linear-gradient(62deg, rgba(30, 30, 46, 1) 0%, rgba(30, 30, 46, 0.3) 100%);
     font-size: 20px;
@@ -224,13 +217,6 @@ label:focus {
     background-color: rgba(30, 30, 46, 0.6);
     color: #CDD6F4;
 }
-
-#custom-snip {
-    background-color: rgba(30, 30, 46, 0.6);
-    color: skyblue;
-    font-size: 20px;
-}
-
 
 #taskbar{
     color: #CDD6F4;
@@ -276,24 +262,4 @@ label:focus {
     color: #CDD6F4;
     border-radius: 20px 0px 0px 20px;
 
-}
-
-#language {
-    background-color: rgba(30, 30, 46, 0.6);;
-    color: #CDD6F4;
-    min-width: 16px;
-}
-
-#keyboard-state {
-    background: #97e1ad;
-    color: #000000;
-    min-width: 16px;
-}
-
-#keyboard-state > label {
-    padding: 0px 5px;
-}
-
-#keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
 }

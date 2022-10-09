@@ -1,1 +1,1 @@
-A place to host dot files for stuff I might be working on.
+A place to host files for stuff I might be working on.

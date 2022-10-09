@@ -1,0 +1,29 @@
+
+//
+// Waybar config file
+{
+    "include": "~/.config/hypr/waybar/modules",
+    "name": "main-bar", 
+    "id": "main-bar", 	
+    "layer": "top",
+    "output": ["DP-5", "eDP-1", "DP-6"],
+    "mode": "dock", 	
+    "exclusive": true,
+    "passthrough": false,
+    "position": "top",
+    "height": 20,
+    "width": "", 		
+    "spacing": 6, 		
+    "margin": 0, 		
+    "margin-top": 0, 	
+    "margin-bottom": 0, 
+    "margin-left": 3,
+    "margin-right": 3,
+    "fixed-center": true, 
+    "ipc": true, 		
+    "gtk-layer-shell":true, 
+
+    "modules-left": ["wlr/workspaces", "hyprland/window"],
+    "modules-center": [],
+    "modules-right": [ "idle_inhibitor", "custom/weather", "cpu","memory", "disk",  "temperature", "bluetooth",  "pulseaudio", "backlight", "tray", "battery", "clock"],
+}

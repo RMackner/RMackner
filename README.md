@@ -17,3 +17,5 @@ Music: MPD / ncmpcpp
 Dashboard: Eww
 
 Theme: Catppuccin
+
+Hardware: HP Elitebook 850 G8

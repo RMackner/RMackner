@@ -1,0 +1,42 @@
+#!/bin/bash
+
+## Open Applications
+FILE="$HOME/.cache/eww_launch.dashboard"
+CFG="$HOME/.config/eww/dashboard"
+EWW=`which eww`
+
+close_dash() {
+	${EWW} --config "$CFG" close \
+					background profile system clock uptime music github \
+					reddit twitter youtube weather apps mail logout sleep reboot poweroff folders
+	rm -rf "$FILE"
+}
+
+if [[ "$1" == "--ff" ]]; then
+	close_dash && firefox &
+
+elif [[ "$1" == "--br" ]]; then
+	close_dash && brave-browser &
+
+elif [[ "$1" == "--dc" ]]; then
+	close_dash && discord &
+
+elif [[ "$1" == "--tr" ]]; then
+	close_dash && alacritty --working-directory ~ &
+
+elif [[ "$1" == "--fm" ]]; then
+	close_dash && dolphin ~ &
+
+elif [[ "$1" == "--of" ]]; then
+	close_dash && QT_QPA_PLATFORM=xcb onlyoffice-desktopeditors  &
+
+elif [[ "$1" == "--kp" ]]; then
+	close_dash && keepassxc &
+
+elif [[ "$1" == "--kt" ]]; then
+	close_dash && kate &
+
+elif [[ "$1" == "--st" ]]; then
+	close_dash && steam &
+
+fi

@@ -1,4 +1,4 @@
-A place to host dotfiles for whatever Window manager I'm currently using.
+A place to host dotfiles for whatever Window manager I'm currently using. Also a general collection of scripts I gathered to make wlroots feel more like a full DE.
 
 WM: Hyprland
 

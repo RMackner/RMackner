@@ -8,7 +8,7 @@
 
 ;; Profile vars
 (defvar IMAGE "images/profile.jpg")
-(defvar NAME "Ryan J. mackner")
+(defvar NAME "Your Name")
 (defpoll UNAME :interval "5m" `whoami`)
 
 ;; System vars

@@ -89,7 +89,7 @@
 /** Clock ********************************************/
 .time_hour, .time_min {
 	color: #8aadf4;
-	font-size : 70px;
+	font-size : 60px;
 	font-weight : bold;
 }
 .time_hour {
@@ -101,9 +101,9 @@
 
 .time_mer {
 	color: #a6da95;
-	font-size : 40px;
+	font-size : 35px;
 	font-weight : bold;
-	margin : 20px 0px 0px 0px;
+	margin : 20px 0px 0px 10px;
 }
 
 .time_day {
@@ -167,6 +167,7 @@
 	color: #a6da95;
 	font-size : 48px;
 	font-weight : bold;
+	margin: 0px 0px 0px -12px;
 }
 .btn_next {
 	color: #Eed49f;
@@ -198,7 +199,7 @@
 
 .label_temp {
 	color : #8bd5ca;
-	font-size : 80px;
+	font-size : 70px;
 	font-weight : bold;
 	margin : -15px 30px 0px 0px;
 }
@@ -211,13 +212,13 @@
 
 .label_quote {
 	color : #cad3f5;
-	font-size : 18px;
+	font-size : 16px;
 	font-weight : normal;
 }
 
 /** Applications ***************************************/
 .appbox {
-	margin : 15px 0px 0px 25px;
+	margin : 15px 0px 0px 23px;
 }
 
 .app_fox, .app_telegram, .app_discord, .app_terminal,
@@ -225,8 +226,8 @@
     background-repeat: no-repeat;
 	background-size: 64px;
 	min-height: 64px;
-	min-width: 64px;
-	margin: 8px 8px 0px 8px;
+	min-width: 60px;
+	margin: 2px 7px 6px 11px;
 }
 
 .app_fox {}
@@ -251,23 +252,37 @@
 }
 
 .github {
-	background-color: rgba(36, 41, 46, 0.6);
+	color: #CDD6F4;
+    background-color: rgba(30, 30, 46, 0.5);
+    background-image: linear-gradient(180deg, rgba(30, 30, 46, 0) 1%, rgba(24, 25, 38, 0.9) 90%);
 	border-radius: 16px;
+	margin: 0px 0px 0px -8px;
 }
 .reddit {
-	background-color: rgba(228, 97, 49, 0.6);
+	color: #f5a97f;
+    background-color: rgba(30, 30, 46, 0.5);
+    background-image: linear-gradient(180deg, rgba(30, 30, 46, 0) 1%, rgba(24, 25, 38, 0.9) 90%);
 	border-radius: 16px;
+	margin: 0px 0px 0px -13px;
 }
 .twitter {
-	background-color: rgba(97, 169, 214, 0.6);
+	color: #CDD6F4;
+    background-color: rgba(30, 30, 46, 0.5);
+    background-image: linear-gradient(180deg, rgba(30, 30, 46, 0) 1%, rgba(24, 25, 38, 0.9) 90%);
 	border-radius: 16px;
+	margin: 0px 0px 0px -8px;
 }
 .youtube {
-	background-color: rgba(223, 88, 78, 0.6);
+	color: #ED8796;
+    background-color: rgba(30, 30, 46, 0.5);
+    background-image: linear-gradient(180deg, rgba(30, 30, 46, 0) 1%, rgba(24, 25, 38, 0.9) 90%);
 	border-radius: 16px;
+	margin: 0px 0px 0px 17px;
 }
 .mail {
-	background-color: rgba(255, 255, 255, 0.6);
+	color: #CDD6F4;
+    background-color: rgba(30, 30, 46, 0.5);
+    background-image: linear-gradient(180deg, rgba(30, 30, 46, 0) 1%, rgba(24, 25, 38, 0.9) 90%);
 	border-radius: 16px;
 }
 
@@ -294,32 +309,35 @@
 }
 .btn_sleep {
 	color: #a6da95;
+	margin: 8px 8px 0px -4px;
 }
 .btn_reboot {
 	color: #eed49f;
+	margin: 8px 8px 0px -4px;
 }
 .btn_poweroff {
 	color: #8aadf4;
+	margin: 8px 8px 0px -4px;
 }
 
 /** Home folders ***************************************/
 .hddbox {
 	background-color: #303446;
 	border-radius: 10px;
-	margin : 15px;
+	margin : 20px;
 }
 .hddicon {
 	color: #81A1C1;
 	font-family: FuraMono Nerd Font;
-	font-size : 70px;
+	font-size : 53px;
 	font-weight : normal;
-	margin : 25px 20px 25px 40px;
+	margin : 25px 20px 25px 25px;
 }
 .hdd_label {
 	color: #cad3f5;
 	font-size : 48px;
 	font-weight : bold;
-	margin : 0px 0px 0px 15px;
+	margin : 0px 0px 0px 5px;
 }
 .fs_sep {
 	color: #f4dbd6;
@@ -355,7 +373,7 @@
 .label_folder1, .label_folder2, .label_folder3, .label_folder4, .label_folder5, .label_folder6  {
 	font-size : 22px;
 	font-weight : normal;
-	margin : 0px 0px 0px 30px;
+	margin : 0px 0px 0px 20px;
 }
 .label_folder1 {
 	color: #ed8796;

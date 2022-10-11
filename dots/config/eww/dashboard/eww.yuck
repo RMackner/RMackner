@@ -8,7 +8,7 @@
 
 ;; Profile vars
 (defvar IMAGE "images/profile.jpg")
-(defvar NAME "UnixPorn")
+(defvar NAME "Ryan J. mackner")
 (defpoll UNAME :interval "5m" `whoami`)
 
 ;; System vars
@@ -135,7 +135,7 @@
 ;; youtube
 (defwidget youtube []
 	(box :class "youtube" :vexpand "false" :hexpand "false"
-		(button :class "iconweb" :onclick "scripts/open_links --yt" "")))
+		(button :class "iconweb" :onclick "scripts/open_links --yt" " ")))
 
 ;; mail
 (defwidget mail []
@@ -306,5 +306,5 @@
 
 ;; folders
 (defwindow folders :stacking "fg" :focusable "false" :monitor 0
-	    :geometry (geometry :x 1445 :y 490 :width 325 :height 440)
+	    :geometry (geometry :x 1445 :y 490 :width 325 :height 300)
 					(folders))

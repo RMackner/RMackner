@@ -14,7 +14,7 @@ Shell: Fish
 
 Music: MPD / ncmpcpp
 
-Dashboard: Eww
+Dashboard: Eww retehemed from https://github.com/adi1090x/widgets
 
 Theme: Catppuccin
 

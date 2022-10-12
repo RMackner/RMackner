@@ -99,7 +99,7 @@ window#waybar.hidden {
 #battery.charging, #battery.plugged {
     color: #CDD6F4;
     background-color: rgba(30, 30, 46, 0.5);
-    background-image: linear-gradient(62deg, rgba(129, 200, 190, 0.3) 1%, rgba(30, 30, 46, 0.3) 90%);
+    background: radial-gradient(circle, rgba(30, 30, 46,0.6) 65%, rgba(166, 227, 161, 0.5) 50%);
 }
 
 @keyframes blink {
@@ -242,7 +242,9 @@ label:focus {
 }
 
 #temperature.critical {
-    background-color: #eb4d4b;
+    color: #CDD6F4;
+    background: rgb(17,17,27);
+    background: radial-gradient(circle, rgba(30, 30, 46,0.6) 65%, rgba(235,77,75,0.5) 50%);
 }
 
 #tray {
@@ -272,7 +274,7 @@ label:focus {
 }
 
 #idle_inhibitor.activated {
-    color: #CDD6F4;
+    color: rgba(166, 227, 161, 1);
     background-color: rgba(30, 30, 46, 0.5);
     background-image: linear-gradient(180deg, rgba(30, 30, 46, 0.8) 1%, rgba(24, 25, 38, 0.9) 90%);
     border-radius: 20px 0px 0px 20px;

@@ -19,3 +19,6 @@ Dashboard: Eww
 Theme: Catppuccin
 
 Hardware: HP Elitebook 850 G8
+
+COPR with current Hyprland builds for Fedora 37:
+https://copr.fedorainfracloud.org/coprs/kasion/

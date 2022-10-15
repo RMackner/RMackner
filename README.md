@@ -4,7 +4,7 @@ WM: Hyprland
 
 OS: Fedora 37
 
-Term: Alacritty
+Term: foot
 
 Launcher: tofi
 

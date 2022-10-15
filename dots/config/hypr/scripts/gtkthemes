@@ -5,7 +5,7 @@
 
 THEME='Catppuccin-Macchiato-Green'
 ICONS='Desert-Dark-Icons'
-FONT='FuraMono Nerd Font'
+FONT='Iosevka Nerd Font'
 CURSOR='Posy_Cursor_Mono_Black'
 
 SCHEMA='gsettings set org.gnome.desktop.interface'

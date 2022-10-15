@@ -2,22 +2,21 @@
 font:
   # Normal (roman) font face
   normal:
-    family: "FuraMono Nerd Font"
+    family: "Iosevka Nerd Font"
     #style: Regular
 
   # Bold font face
   bold:
-    family: "FuraMono Nerd Font"
-    #style: Bold
+    family: "Iosevka Nerd Font"
 
   # Italic font face
   italic:
-    family: "FuraMono Nerd Font"
+    family: "Iosevka Nerd Font"
     #style: Italic
 
   # Bold italic font face
   bold_italic:
-    family: "FuraMono Nerd Font"
+    family: "Iosevka Nerd Font"
     #style: Bold Italic
 
   # Point size

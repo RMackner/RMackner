@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+
+## Set GTK Themes, Icons, Cursor and Fonts
+
+THEME='Tokyonight-Dark-BL'
+ICONS='Desert-Dark-Icons'
+FONT='Iosevka, 11.5'
+#CURSOR='Posy_Cursor_Mono_Back'
+COLORSCHEME='prefer-dark'
+
+SCHEMA='gsettings set org.gnome.desktop.interface'
+
+apply_themes () {
+	${SCHEMA} gtk-theme "$THEME"
+	${SCHEMA} icon-theme "$ICONS"
+#	${SCHEMA} cursor-theme "$CURSOR"
+	${SCHEMA} font-name "$FONT"
+	${SCHEMA} color-scheme "$COLORSCHEME"
+}
+
+apply_themes

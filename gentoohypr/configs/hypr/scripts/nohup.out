@@ -1,0 +1,7 @@
+/usr/bin/env: ‘python’: No such file or directory
+
+** (waybar:8343): WARNING **: 09:47:08.279: gtk-layer-shell v0.7.0 may not work on GTK v3.24.34. If you experience crashes, check https://github.com/wmww/gtk-layer-shell/blob/master/compatibility.md
+
+(waybar:8343): Gtk-WARNING **: 09:47:08.431: Could not load a pixbuf from icon theme.
+This may indicate that pixbuf loaders or the mime database could not be found.
+[2022-10-19 09:47:08.431] [error] Item 'nm-applet': Failed to load /usr/share/icons/Desert-Dark-Icons/status/22/nm-device-wired.svg: Error opening file /usr/share/icons/Desert-Dark-Icons/status/22/nm-device-wired.svg: No such file or directory

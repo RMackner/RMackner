@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+while true; do    
+  # human-readable
+  freeH=$(top -d1 | head -n 7 | rg Mem)
+#  freeH=$(free -h --si | rg "Mem:")
+  # non-human-readable
+  #freeN=$(free --mega | rg "Mem:")
+   freeN=$(top -d1 | head -n 7)
+
+   total="16G"
+  #total="$(echo "$freeH" | awk '{ print $3 }')"
+  used="$(echo "$freeH" | awk '{ print $8 }')"
+  t="$(echo "$freeN" | awk '{ 16000 }')"
+  u="$(echo "$freeN" | awk '{ print $8 }')"
+
+  free=$(printf '%.1fG' "$(bc -l <<< "($t - $u) / 1000")")
+  perc=$(printf '%.1f' "$(top -d1 | head -n 7 | rg Mem: | awk '{print ($4/16000)*100}')")
+
+  echo '{ "total": "'"$total"'", "used": "'"$used"'", "free": "'"$free"'", "percentage": '"$perc"' }'
+
+  sleep 3
+done

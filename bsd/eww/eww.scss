@@ -1,0 +1,132 @@
+@import 'css/colors';
+
+@mixin rounding {
+  border-radius: 16px;
+}
+
+@mixin window {
+  border: 1px solid $border;
+  box-shadow: 0 2px 3px $shadow;
+  margin: 5px 5px 10px;
+  @include rounding;
+}
+
+* {
+  all: unset;
+  transition: 200ms ease;
+  font-family: mononoki Nerd Font, Mono;
+}
+
+@import 'css/calendar';
+@import 'css/music';
+@import 'css/notification';
+@import 'css/sidebar';
+@import 'css/system';
+@import 'css/volume';
+
+.bar {
+  background-color: $bg2;
+  color: $fg;
+  border-radius: 0px;
+
+  label {
+    font-size: 1.2rem;
+  }
+}
+
+tooltip {
+  background: $bg;
+  border: 1px solid $border;
+  border-radius: 8px;
+
+  label {
+    font-size: 1rem;
+  }
+}
+
+.module { margin: 0 5px; }
+.hour { font-weight: bold; }
+.date {
+  background: $bg;
+  color: $sky;
+  margin-left: 0.15rem;
+  padding: 0 1rem;
+
+  label {
+    font-size: 1.2rem;
+  }
+}
+
+.launcher-icon {
+	margin : 0px 0px 0px 10px;
+}
+
+.app-name {
+  color: $sky;
+  font-size: 8px;
+  margin : 4px 0px 0px 20px;
+}
+
+.app-icon {
+	margin : 8px 10px 0px 0px;
+}
+
+.app-button {
+	color: $mauve;
+	font-size : 10px;
+	font-weight : normal;
+	margin : 0px 15px 0px 15px;
+}
+
+.bright-icon { 
+color: $yellow;
+margin: 0px 15px 0px 0px;
+ }
+
+.module-ssid,
+.module-net { 
+color: $lavender;
+margin: 0px 10px 0px;
+ }
+
+.module-bt { 
+font-size: 1.2rem;
+margin: 0px 15px 00px;
+ }
+ 
+ .module-clock { 
+font-size: 1rem;
+margin: 0px 0px 0px 0px;
+ }
+
+.separ {
+  color: $surface0;
+  font-size: 1.5rem;
+  padding-bottom: 2px;
+}
+
+scale trough {
+  background-color: $bg1;
+  border-radius: 24px;
+  margin: 0 1rem;
+  min-height: 10px;
+  min-width: 70px;
+}
+
+.workspaces { 
+margin: -1px 0px 0px 0px;
+margin-left: 4px; }
+
+.launcher label {
+  background-color: $mauve;
+  border-radius: 5px;
+  color: $bg;
+  font-family: mononoki Nerd Font, Mono;
+  font-size: 1.5rem;
+  padding: 0 1.1rem 0 .5rem;
+}
+
+.notif-toggle {
+  padding: 0 5px;
+}
+

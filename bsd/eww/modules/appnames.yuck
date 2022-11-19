@@ -1,0 +1,31 @@
+(defwidget appnames []
+  (eventbox
+    :onhover "${EWW_CMD} update control_reveal=true"
+	  :onhoverlost "${EWW_CMD} update control_reveal=false"
+    (box
+	    :orientation "h"
+	    :space-evenly "false"
+	    :vexpand "false"
+	    :hexpand "false" 
+	    :spacing "0" 
+        (literal 
+            :content appname)
+	    (revealer
+	      :transition "slideright"
+		    :reveal control_reveal
+		    :duration "350ms"
+        (box
+            :vexpand "false"
+            :hexpand "false"
+            :orientation "h"
+            :space-evenly "false"
+            :spacing "0"  
+            (button
+                :class "app-button"
+                :onclick "hyprctl dispatch togglefloating 1" "") 
+		  	    (button
+		  	        :class "app-button"
+		  	        :onclick "hyprctl dispatch fullscreen 1" "")
+		  	    (button
+		  	        :class "app-button"
+                :onclick "hyprctl dispatch killactive 1" ""))))))

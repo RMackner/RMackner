@@ -1,0 +1,12 @@
+(defwidget launcher []
+  (box 
+    :class "launcher_module"
+    :orientation "h"
+    (button
+        :onclick "rofi -no-lazy-grab -show drun -theme /home/rjm/.config/rofi/launchers/type-6/style-10.rasi &"
+        (image 
+          :class "launcher-icon"
+          :path "favicon.ico"
+          :image-width 24))
+    
+   ))

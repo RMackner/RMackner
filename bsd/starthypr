@@ -1,0 +1,15 @@
+#!/usr/local/bin/fish
+export XDG_RUNTIME_DIR=/tmp/hyprwm
+export XDG_SESSION_TYPE=wayland
+#export XKB_DEFAULT_LAYOUT="be(nodeadkeys)"
+export XKB_DEFAULT_RULES=evdev
+export GDK_BACKEND=wayland
+export QT_QPA_PLATFORM=wayland
+export QT_QPA_PLATFORMTHEME="qt5ct"
+export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+export SDL_VIDEODRIVER=wayland
+export MOZ_ENABLE_WAYLAND=1
+export WM=sway
+export CLUTTER_BACKEND=wayland
+export BEMENU_BACKEND=wayland
+exec ck-launch-session Hyprland
